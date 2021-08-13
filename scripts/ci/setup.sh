@@ -2,7 +2,7 @@
 
 set -eu
 
-yum -y install rbenv
+sudo yum -y install rbenv
 
 gem install bundle
 
