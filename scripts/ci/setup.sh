@@ -2,6 +2,8 @@
 
 set -eu
 
+gem install bundle
+
 bundle install
 
 npm install
