@@ -3,4 +3,4 @@ source 'https://rubygems.org/'
 gem 'rspec'
 gem 'knapsack'
 
-gem "rspec-buildkite-insights", path: "~/Checkouts/rspec-buildkite-insights"
+gem "rspec-buildkite-insights", path: "/Users/rycar/Checkouts/rspec-buildkite-insights"
