@@ -1,7 +1,7 @@
-RSpec.describe "Secondrequire 'spec_helper'
+requre 'spec_helper'
 
- spec" do
-  it "runs in parallel" do
-    expect(1).to eql(1)
+RSpec.describe "Second spec" do
+  it "totally works" do
+    expect(1).to eql(0)
   end
 end
