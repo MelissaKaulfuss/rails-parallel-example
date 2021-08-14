@@ -1,7 +1,11 @@
 require 'spec_helper'
 
 RSpec.describe "Third spec" do
-  it "runs in parallel" do
-    expect(1).to eql(1)
+  describe "GET" do
+    it "returns 'Hello World'" do
+      get "https://google.com"
+
+      expect(response.status).to eql(200)
+    end
   end
 end
