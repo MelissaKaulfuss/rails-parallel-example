@@ -2,12 +2,9 @@ require 'spec_helper'
 require 'net/http'
 
 RSpec.describe "Third spec" do
-  describe "GET" do
-    it "returns 'Hello World'" do
-      get Net::HTTP.get(URI.parse('http://www.google.com'))
-
-
-      expect(response.status).to eql(200)
+  describe "Wait wait wait" do
+    it "Wastes my time." do
+      sleep 500
     end
   end
 end
