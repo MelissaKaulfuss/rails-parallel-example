@@ -1,4 +1,4 @@
-requre 'spec_helper'
+require 'spec_helper'
 
 RSpec.describe "Second spec" do
   it "totally works" do
