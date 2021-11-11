@@ -10,8 +10,7 @@ eval "$(rbenv init -)"
 
 # Install ruby-build system-widely
 [ ! -d /tmp/ruby-build ] && git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
-cd /tmp/ruby-build
-sudo ./install.sh
+sudo /tmp/ruby-build/install.sh
 
 rbenv install 2.4.1 && rbenv global 2.4.1
 
