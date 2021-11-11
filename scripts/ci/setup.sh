@@ -4,12 +4,12 @@ set -eu
 
 sudo yum install -y git gcc make readline-devel openssl-devel
 
-git clone git://github.com/rbenv/rbenv.git ~/.rbenv
+[ ! -d '~/.rbenv' ] && git clone git://github.com/rbenv/rbenv.git ~/.rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Install ruby-build system-widely
-git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
+[ ! -d '/tmp/ruby-build' ] && git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
 cd /tmp/ruby-build
 sudo ./install.sh
 
