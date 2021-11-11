@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -eu
+
+if [ $BUILDKITE_LAST_HOOK_EXIT_STATUS -ne 0 ]; then
+    ./scripts/ci/buildevents build $BUILDKITE_BUILD_ID $BUILD_START failure
+fi
+./scripts/ci/buildevents build $BUILDKITE_BUILD_ID $BUILD_START success
