@@ -2,7 +2,9 @@
 
 set -eu
 
-sudo yum install -y git gcc make readline-devel openssl-devel npm
+sudo yum install -y git gcc make readline-devel openssl-devel
+sudo yum install nodejs npm --enablerepo=epel
+
 
 [ ! -d ~/.rbenv ] && git clone git://github.com/rbenv/rbenv.git ~/.rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
