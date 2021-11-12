@@ -5,4 +5,3 @@ set -eu
 if [ $BUILDKITE_LAST_HOOK_EXIT_STATUS -ne 0 ]; then
     ./buildevents build $BUILDKITE_BUILD_ID $BUILD_START failure
 fi
-./buildevents build $BUILDKITE_BUILD_ID $BUILD_START success

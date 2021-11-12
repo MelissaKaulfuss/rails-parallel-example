@@ -2,3 +2,5 @@ steps:
   - name: ":rspec:"
     command: "scripts/ci/setup.sh && scripts/ci/parallel_specs.sh"
     parallelism: 20
+  - name: "Send Build Report to Honeycomb :bee:"
+    command: "scripts/ci/build_report.sh"
