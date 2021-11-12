@@ -18,7 +18,7 @@ eval "$(rbenv init -)"
 # Install ruby-build system-widely
 ./buildevents cmd $BUILDKITE_BUILD_ID $STEP_SPAN_ID install-rubybuild -- [ ! -d /tmp/ruby-build ] && git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build && sudo /tmp/ruby-build/install.sh
 
-./buildevents cmd $BUILDKITE_BUILD_ID $STEP_SPAN_ID install-ruby -- rbenv install -l
+./buildevents cmd $BUILDKITE_BUILD_ID $STEP_SPAN_ID install-ruby -- rbenv install 3.0.2
 
 ./buildevents cmd $BUILDKITE_BUILD_ID $STEP_SPAN_ID install-bundler -- gem install bundle
 
