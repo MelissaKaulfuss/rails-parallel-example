@@ -2,10 +2,10 @@ require 'spec_helper'
 
 require 'knapsack'
 
-require "rspec/buildkite/insights"
+require "rspec-buildkite-analytics"
 
 Knapsack::Adapters::RSpecAdapter.bind
 
-RSpec::Buildkite::Insights.configure do |config|
+RSpec::Buildkite::Analytics.configure do |config|
     # defaults, baby!
 end
