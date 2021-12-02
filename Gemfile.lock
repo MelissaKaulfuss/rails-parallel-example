@@ -19,7 +19,7 @@ GEM
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
       rspec-mocks (~> 3.10.0)
-    rspec-buildkite-analytics (0.5.0)
+    rspec-buildkite-analytics (0.4.0)
       activesupport (>= 5.2, <= 7.0)
       rspec-core (~> 3.10)
       rspec-expectations (~> 3.10)
@@ -44,7 +44,7 @@ PLATFORMS
 DEPENDENCIES
   knapsack
   rspec
-  rspec-buildkite-analytics
+  rspec-buildkite-analytics (= 0.4.0)
 
 BUNDLED WITH
    2.2.17
