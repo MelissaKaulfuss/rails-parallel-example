@@ -4,11 +4,11 @@ require 'net/http'
 RSpec.describe "Third spec" do
   describe "Wait wait wait" do
     it "Wastes my time." do
-      sleep 15
+      sleep 4
     end
 
     it "Sloooowwww" do
-      sleep 10
+      sleep 24
     end
   end
 end

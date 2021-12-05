@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe "Second spec" do
   it "totally should work" do
-    expect(1).to eql(1)
+    expect(1).to eql(0)
   end
 
   it "totally works" do
